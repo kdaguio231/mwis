@@ -1,0 +1,23 @@
+curl https://checkout-test.adyen.com/v66/payments \
+-H 'x-api-key: AQEyhmfuXNWTK0Qc+iSVm3Y9scmSS5lCC5pEWWtVw1GlnTYfyuuhrG3UfRWPSqWXDZrHMVUQwV1bDb7kfNy1WIxIIkxgBw==-Dl4Z24THQnCHMv0zOo/UlpyESiUi/BjlfcCXXzLaYas=-{G}CAB2{D>Av;v]j' \
+-H 'content-type: application/json' \
+-d '{
+  "merchantAccount": "EirevMicrofinanceInc044ECOM",
+  "reference": "My first Adyen test payment",
+  "amount": {
+    "value": 1000,
+    "currency": "EUR"
+  },
+    "paymentMethod": {
+    "type": "scheme",
+    "encryptedCardNumber": "test_4111111111111111",
+    "encryptedExpiryMonth": "test_03",
+    "encryptedExpiryYear": "test_2030",
+    "encryptedSecurityCode": "test_737"
+  }
+}'
+
+
+
+API Key:
+AQEyhmfuXNWTK0Qc+iSVm3Y9scmSS5lCC5pEWWtVw1GlnTYfyuuhrG3UfRWPSqWXDZrHMVUQwV1bDb7kfNy1WIxIIkxgBw==-Dl4Z24THQnCHMv0zOo/UlpyESiUi/BjlfcCXXzLaYas=-{G}CAB2{D>Av;v]j
